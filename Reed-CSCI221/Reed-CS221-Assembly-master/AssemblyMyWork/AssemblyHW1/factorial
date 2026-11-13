@@ -1,0 +1,34 @@
+# This program takes user input char c, and global string str.
+#function countOccurrences takes two arguments: address of a string and a character, then returns the number of times that character occurs in the string.
+#By Hannah
+    .data
+
+    .text
+    .align 2
+    .globl main
+main:
+    #pass    
+
+fact:
+    #if a0 is <1, return 1
+    #else, recursive return with a0*fact(a0-1)
+    addi $sp,$sp,-4 #growing the stack
+    sw $ra,$sp      #store return 
+    #save a0 to stack
+    #addi $a0,$a0,-1
+    #jal fact
+    #v0= fact(a0-1)
+    #restore a0
+    #v0=v0*a0
+
+loop:
+    beq $a0,1,end
+
+    j end
+
+return1:
+    li $v0,1    #final case returns 1
+end: 
+    addi $sp,$sp,4 #shrink stack
+    lw $ra,$sp  #get return 
+    jr $ra      #return

@@ -1,0 +1,47 @@
+#takes in two ints, one base and one exponent. Assumes exponent >=0.
+    .text
+    .align 2
+    .globl main
+main:
+    li $a0, 0            #read int base
+    li $v0, 5
+    syscall
+    move $t0,$v0        #move base into $t0    
+    li $a0, 0            #read int exponent
+    li $v0, 5
+    syscall
+    move $t0,$v0        #move exponent into $t0
+    li $t2,1            #t2 = result = 1
+    li $s0, 0           #prep s0 to have things added to it
+    jal loop
+    li $v0,10
+    syscall
+loop:
+    #lw $t1,0($sp) #load out of stack
+    #addi $sp,$sp,4 #shrink stack
+    #lw $t0, 0($sp) #result out of stack
+    #addi $sp,$sp,4 #shrink stack
+    #mul #t1,$t1,$a0 #based is raised
+    #addi $t0,$t0,1     #i+ = 1
+    #grow stack
+    #store res in stack
+    #grow stack
+    #bge $t0,$a1,leaveloop
+    #b loop
+
+
+    #bge $t0, $t2, end
+    #mult $t3,$t1
+    #mflo $t3
+    #addi $t0,$t0,1
+    #j loop
+    
+    move $t3,$t0
+    mult $t2,$t3
+    addi $s0,$s0,1 #increment s0
+    blt $s0,$a0,loop
+    jr $ra
+
+
+
+

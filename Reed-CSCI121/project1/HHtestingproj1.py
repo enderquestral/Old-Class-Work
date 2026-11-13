@@ -1,0 +1,2 @@
+def autoplayLoud():
+    return

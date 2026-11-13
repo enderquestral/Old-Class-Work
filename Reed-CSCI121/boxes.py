@@ -1,0 +1,8 @@
+width = int(input("Width? "))
+totalboxes = int(input("Number? "))
+longedge = ("+" + ("-"*width) + "+")
+midsection = ("|" + (" "*width) + "|")
+print()
+print( ((longedge + " ")* (totalboxes-1)) + longedge)
+print( ((midsection + " ")*(totalboxes-1)) + midsection)
+print( ((longedge + " ")*(totalboxes-1)) + longedge)

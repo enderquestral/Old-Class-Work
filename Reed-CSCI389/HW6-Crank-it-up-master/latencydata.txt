@@ -1,0 +1,48 @@
+Baseline performance test: [1]
+95th-percentile latency: 0.624999
+Requests per second: 8422.470703
+Baseline performance test: [2]
+95th-percentile latency: 0.559732
+Requests per second: 18102.824219
+Baseline performance test: [3]
+95th-percentile latency: 0.571168
+Requests per second: 24189.646484
+Baseline performance test: [4]
+95th-percentile latency: 0.549607
+Requests per second: 33377.835938
+Baseline performance test: [5]
+95th-percentile latency: 0.558530
+Requests per second: 34305.316406
+Baseline performance test: [6]
+95th-percentile latency: 0.549992
+Requests per second: 30553.009766
+Baseline performance test: [7]
+95th-percentile latency: 0.548489
+Requests per second: 36310.820312
+Baseline performance test: [8]
+95th-percentile latency: 0.546219
+Requests per second: 36982.250000
+
+Baseline performance test: [9]
+95th-percentile latency: 0.568738
+Requests per second: 27808.675781
+Baseline performance test: [9]
+95th-percentile latency: 0.571685
+Requests per second: 15508.684570
+Baseline performance test: [9]
+95th-percentile latency: 0.570967
+Requests per second: 17259.234375
+Baseline performance test: [9]
+95th-percentile latency: 0.546862
+Requests per second: 33681.375000
+
+
+Baseline performance test: [10]
+95th-percentile latency: 0.556547
+Requests per second: 34614.054688
+Baseline performance test: [11]
+95th-percentile latency: 0.548909
+Requests per second: 29850.746094
+Baseline performance test: [12]
+95th-percentile latency: 0.560119
+Requests per second: 26329.646484

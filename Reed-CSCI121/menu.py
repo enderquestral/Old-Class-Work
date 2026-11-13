@@ -1,0 +1,15 @@
+restname = input("Restaurant name? ") #Remember: menu is 40 columns wide
+item1name = str(input("First entree? "))
+item1price = str(input("First entree price? "))
+item2name = str(input("Second entree? "))
+item2price = str(input("Second entree price? "))
+item3name = str(input("Third entree? "))
+item3price = str(input("Third entree price? "))
+print()
+print(1234567890123456789012345678901234567890)
+print()
+print(restname + " Entrees")
+print('-'* len(restname +" Entrees")) #.s end at 37 mark, with a $. there are spaces if price is below 100
+print(item1name + ("."* (36-len(item1name))) + "$" + (" " * (3-len(item1price))) + item1price)
+print(item2name + ("."* (36-len(item2name))) + "$" + (" " * (3-len(item2price))) + item2price)
+print(item3name + ("."* (36-len(item3name))) + "$" + (" " * (3-len(item3price))) + item3price)

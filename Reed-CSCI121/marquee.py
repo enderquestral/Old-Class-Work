@@ -1,0 +1,6 @@
+word = input("Word? ")
+strlen = len(word)
+print()
+print("**" + ("*" * strlen) + '**')
+print("* " + word + ' *')
+print("**" + ("*" * strlen) + '**')
